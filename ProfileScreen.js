@@ -15,15 +15,15 @@ const { width } = Dimensions.get('window');
 const ProfileScreen = () => {
   // Mock user data - replace with actual user data from your backend/state
   const user = {
-    name: 'John Doe',
-    username: '@johndoe',
-    bio: 'Mobile developer passionate about React Native and creating amazing user experiences.',
+    name: 'Jane Smith',
+    username: '@janesmith',
+    bio: 'Full-stack developer specializing in React Native & Node.js. Coffee enthusiast ☕',
     avatar: 'https://via.placeholder.com/150',
-    followers: 1234,
-    following: 567,
-    posts: 89,
-    location: 'San Francisco, CA',
-    website: 'johndoe.dev',
+    followers: 2156,
+    following: 342,
+    posts: 127,
+    location: 'New York, NY',
+    website: 'janesmith.dev',
   };
 
   const stats = [
