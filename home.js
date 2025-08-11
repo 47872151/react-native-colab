@@ -12,7 +12,18 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
 
 export default function Home() {
-  const userName = 'Usuario'; // You can replace this with actual user data
+  // User data structure matching ProfileScreen.js
+  const user = {
+    name: 'John Doe',
+    username: '@johndoe',
+    bio: 'Mobile developer passionate about React Native and creating amazing user experiences.',
+    avatar: 'https://via.placeholder.com/150',
+    followers: 1234,
+    following: 567,
+    posts: 89,
+    location: 'San Francisco, CA',
+    website: 'johndoe.dev',
+  };
 
   const features = [
     {
@@ -59,11 +70,12 @@ export default function Home() {
       >
         <View style={styles.headerContent}>
           <View style={styles.userInfo}>
-            <View style={styles.avatar}>
-              <Text style={styles.avatarText}>{userName.charAt(0)}</Text>
-            </View>
+            <Image 
+              source={{ uri: user.avatar }} 
+              style={styles.avatar} 
+            />
             <View style={styles.greetingContainer}>
-              <Text style={styles.greeting}>¡Hola {userName}!</Text>
+              <Text style={styles.greeting}>¡Hola {user.name}!</Text>
               <Text style={styles.subtitle}>Bienvenido de vuelta</Text>
             </View>
           </View>
