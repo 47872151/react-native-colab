@@ -10,6 +10,7 @@ import {
   KeyboardAvoidingView,
   Platform,
 } from 'react-native';
+import Card from '../components/Card';
 
 const FormularioContactoScreen = () => {
   const [formData, setFormData] = useState({
@@ -195,6 +196,9 @@ const FormularioContactoScreen = () => {
             <Text style={styles.contactText}>📞 +1 (555) 123-4567</Text>
             <Text style={styles.contactText}>📍 Calle Principal 123, Ciudad</Text>
           </View>
+
+          <Card title="Consultoría Online" description="Reserva una cita con nuestros expertos y recibe asesoría personalizada."
+        price="$49.99" category="Servicios" rating={4.9} imageUrl="https://via.placeholder.com/300x200" features={["Atención personalizada", "Horario flexible", "Garantía de satisfacción"]}/>
         </View>
       </ScrollView>
     </KeyboardAvoidingView>
