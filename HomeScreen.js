@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import { Ionicons } from '@expo/vector-icons';
+import Card from '../components/Card';
 
 export default function Home() {
   // User data structure matching ProfileScreen.js
@@ -141,6 +142,10 @@ export default function Home() {
             </TouchableOpacity>
           </LinearGradient>
         </View>
+
+        <Card title="Producto Destacado" description="Este es un producto de alta calidad con características excepcionales"
+        price="$299.99" category="Electrónica" rating={4.8} imageUrl="https://via.placeholder.com/300x200" features={["Alta resolución", "Batería de larga duración", "Diseño elegante"]}/>
+        
       </ScrollView>
     </View>
   );
